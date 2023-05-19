@@ -14,6 +14,8 @@ module ExcavatorInteractors
       context.excavator.address = map_excavator_address(params&.[](:Excavator))
       context.excavator.crew_on_site = params&.[](:Excavator)&.[](:CrewOnsite)
       context.excavator.save!
+    rescue  StandardError => e
+        context.fail!(message: e)
     end
 
     def map_excavator_address(excavator)

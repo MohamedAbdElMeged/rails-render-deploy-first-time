@@ -23,3 +23,5 @@ module TicketInteractors
     end
   end
 end
+
+#      <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>

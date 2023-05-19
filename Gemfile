@@ -38,6 +38,17 @@ gem "interactor"
 
 gem "rgeo"
 
+
+group :test do
+  gem 'database_cleaner'
+  gem 'rspec-benchmark'
+  gem 'rspec-rails'
+  gem 'webmock'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rubocop', '~> 0.62.0', require: false
+end
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

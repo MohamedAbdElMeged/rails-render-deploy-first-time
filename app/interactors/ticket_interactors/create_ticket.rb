@@ -12,6 +12,8 @@ module TicketInteractors
     def create_ticket
       context.ticket.save!
       context.ticket = context.ticket.reload
+    rescue  StandardError => e
+        context.fail!(message: e)
     end
   end
 end
