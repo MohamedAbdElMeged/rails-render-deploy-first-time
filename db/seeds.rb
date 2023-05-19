@@ -5,8 +5,3 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-
-10.times do
-  post = Post.new(title: (0...50).map { ('a'..'z').to_a[rand(26)] }.join)
-  post.save!
-end

@@ -1,0 +1,14 @@
+
+
+<h1>Ticket Number <%= @ticket.id %></h1>
+<h4>request_number:  <%= @ticket.request_number %> </h4>
+<h4>sequence_number :<%= @ticket.sequence_number %> </h4>
+<h4>request_type: <%= @ticket.request_type %> </h4>
+<h4>response_due_date_time: <%= @ticket.response_due_date_time %> </h4>
+<h4>primary_service_area_code: <%= @ticket.primary_service_area_code %> </h4>
+<h4>additional_service_area_codes: <%= @ticket.additional_service_area_codes %> </h4>
+
+<h4> WellKnownText </h4>
+<svg id="svgelem" width="100%" height="100%" >
+<polygon points="<%= @ticket.get_polygon_points%>" style="fill:green;" />
+</svg>
